@@ -1,0 +1,5 @@
+---
+galaxy_info:
+  author: Amber Mehra
+  description: Molecule test ansible role using test infra and docker
+  company: amber inc

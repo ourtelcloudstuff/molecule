@@ -1,0 +1,7 @@
+---
+- name: Setup Web Hosting on Azure Cloud Instance
+  hosts: webserver
+  become: true
+
+  roles:
+     - ansible-webhost

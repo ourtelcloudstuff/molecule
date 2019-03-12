@@ -1,0 +1,24 @@
+---
+- name: "Install packages"
+  yum:
+    name: "{{ package }}"
+    state: present
+
+- name: "Ensure index.html is present"
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+
+- name: "httpd service is started and enabled"
+  service:
+    name: "{{ item }}"
+    state: started
+    enabled: true
+  with_items: "{{ service }}"
+
+- name: "Whitelist http in firewalld"
+  firewalld:
+    service: http
+    state: enabled
+    permanent: true
+    immediate: true
