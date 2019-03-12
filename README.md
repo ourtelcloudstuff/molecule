@@ -62,11 +62,11 @@ Index.html file shoule be copied to /var/www/html
 # Testing the Role with Molecule
 
 
-(my_test) amber@ubuntu:/etc/ansible$
+(my_test) ourtelcloudthings@ubuntu:/etc/ansible$
 
 
-(my_test) amber@ubuntu:/etc/ansible$ cd roles/ansible-apache/
+(my_test) ourtelcloudthings@ubuntu:/etc/ansible$ cd roles/ansible-apache/
 
 
-(my_test) amber@ubuntu:/etc/ansible/roles/ansible-apache$ molecule test
+(my_test) ourtelcloudthings@ubuntu:/etc/ansible/roles/ansible-apache$ molecule test
 
